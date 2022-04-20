@@ -1,0 +1,121 @@
+@font-face {
+  font-family: DancingScript;
+  src: url("DancingScript.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NavBar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+  border-radius: 1rem;
+}
+
+/* Home Section*/
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('me.jpg') no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid white;*/
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  /* text-align: center; */
+  margin: 40px 0px;
+  color: black;
+}
+
+span {
+  font-family: DancingScript;
+  color: #D9CE00;
+}
+
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid #D9CE00;
+  color: #D9CE00;
+  outline: none;
+  transition: .6s ease;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #D9CE00;
+  color: black;
+  box-shadow: 0 0 5px #D9CE00, 0 0 10px #D9CE00, 0 0 15px #D9CE00;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+  color: #D9CE00;
+}
+
+a:hover {
+  color: black;
+}
